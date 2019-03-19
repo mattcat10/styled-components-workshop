@@ -19,6 +19,10 @@
     background-color: grey;
 }
 
+.album-button:disabled {
+    background-color: grey;
+}
+
 .album-art {
     height: 200px;
 }

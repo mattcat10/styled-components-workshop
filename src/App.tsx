@@ -9,7 +9,7 @@ class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <h1>
-                        &#9835; &#9833; &#9833; &#9833; &#9835; &#9835;
+                        &#9835; &#9835; &#9835;
                     </h1>
                     <h1 className="App-title">Styled Components Workshop</h1>
                 </header>

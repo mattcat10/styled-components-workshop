@@ -11,8 +11,8 @@ const AlbumComponent = ({ album }: AlbumProps) => (
         <img className="album-art" src={album.albumArt} />
         <h1 className="album-title">{album.title}</h1>
         <div className="album-artist">{album.artist}</div>
-        <button className="album-button round-button" onClick={() => console.log('album clicked')}>
-            View Album
+        <button disabled={album.soldOut} className="album-button round-button" onClick={() => console.log('album clicked')}>
+            {album.soldOut ? 'Sold Out' : 'Buy Album' }
         </button>
     </div>
 

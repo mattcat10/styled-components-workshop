@@ -17,7 +17,7 @@ yarn start
     - album title (h1)
     - album artist label (div)
     - album artist button and round button (2 buttons)
-1. Style one of your components based off props
+1. Use the soldOut value from the album data to change the color of the button instead of using the disabled selector
 1. Add theming to your project
     - use the theme provider to provide a theme
         ``<ThemeProvider theme={theme}>
@@ -27,3 +27,6 @@ yarn start
         ``color: ${props => props.theme.main};``
 1. Add animations
     - to add animations you can import `keyframes` from styled components 
+
+# References
+- styled components docs https://www.styled-components.com/docs
