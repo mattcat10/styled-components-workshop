@@ -1,8 +1,18 @@
 import * as React from 'react';
-import './App.css';
 import { albums } from './stub-data';
 import { AlbumComponent, fadeSlideFromLeft } from './components';
 import styled from 'styled-components';
+
+const AppContainer = styled.div`
+    text-align: center;
+`;
+
+const AppHeader = styled.header`
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+`;
 
 const Title = styled.h1`
     font-size: 1.5em;
@@ -18,24 +28,22 @@ const AlbumContainer = styled.div`
     }
 `;
 
-
-
 class App extends React.Component {
     public render() {
         return (
-            <div className="App">
-                <header className="App-header">
+            <AppContainer>
+                <AppHeader>
                     <h1>
                         &#9835; &#9835; &#9835;
                     </h1>
                     <Title>Styled Components Workshop</Title>
-                </header>
+                </AppHeader>
                 <AlbumContainer>
                     {albums.map((album, i) => (
                         <AlbumComponent key={i} album={album} />
                     ))}
                 </AlbumContainer>
-            </div>
+            </AppContainer>
         );
     }
 }
