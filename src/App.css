@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -16,24 +11,25 @@
 
 .App-title {
   font-size: 1.5em;
+  animation: App-title-fade 0.75s ease-in-out;
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes App-title-fade {
+  from { opacity: 0; margin-left: -50px; }
+  to { opacity: 1; margin-left: 0px; }
 }
 
+.album-container {
+    display: flex;
+    flex-direction: column;
+}
 
-.muzieknootjes {
-  display: block;
-  margin: auto;
-  position: relative;
-  width: 50%;
-  min-width: 300px;
-  height: 200px;
-  border: 0px solid #000;
+@media only screen and (min-width: 768px) {
+    .album-container {
+        flex-direction: row;
+    }
 }

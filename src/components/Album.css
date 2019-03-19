@@ -1,20 +1,33 @@
+.album-component {
+    margin: 1rem;
+}
+
 .album-button {
-    background: none;
+    background: black;
     border: none;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     outline: none;
     cursor: pointer;
+    color: white;
+    min-width: 150px;
+    min-height: 25px;
+    font-size: 1rem;
+}
+
+.album-button:hover {
+    background-color: grey;
 }
 
 .album-art {
-    
+    height: 200px;
 }
 
 .album-title {
-    
+    margin-bottom: 0;
 }
 
 .album-artist {
-    
+    font-size: 1.5rem;
+    font-style: italic;
 }

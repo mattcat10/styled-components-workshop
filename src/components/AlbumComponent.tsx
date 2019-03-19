@@ -7,11 +7,15 @@ type AlbumProps = {
 }
 
 const AlbumComponent = ({ album }: AlbumProps) => (
-    <button className="album-button" onClick={() => console.log('album clicked')}>
+    <div className="album-component">
         <img className="album-art" src={album.albumArt} />
         <h1 className="album-title">{album.title}</h1>
         <div className="album-artist">{album.artist}</div>
-    </button>
+        <button className="album-button round-button" onClick={() => console.log('album clicked')}>
+            View Album
+        </button>
+    </div>
+
 )
 
 export default AlbumComponent;
