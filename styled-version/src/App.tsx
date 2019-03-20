@@ -26,7 +26,7 @@ const AlbumContainer = styled.div`
     display: flex;
     flex-direction: column;
     background-color: ${(props) => props.theme.primary};
-
+    justify-content: center;
     @media only screen and (min-width: 768px) {
         flex-direction: row;
     }
