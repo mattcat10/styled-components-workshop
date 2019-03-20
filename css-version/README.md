@@ -1,4 +1,7 @@
 # Prerequisites
+
+
+## Styled components dependencies
 ```npm i styled-components --save```
 
 If you are using typescript install the types (hint: this project is)

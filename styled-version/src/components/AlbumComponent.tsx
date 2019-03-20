@@ -40,9 +40,7 @@ const AlbumButton = styled(RoundButton)`
         background-color: grey;
     }
 
-    &:disabled {
-        background-color: grey;
-    }
+    ${(props: { soldOut: boolean}) => props.soldOut && 'background-color: grey'};
 `;
 
 const AlbumComponent = ({ album }: AlbumProps) => (
@@ -50,7 +48,7 @@ const AlbumComponent = ({ album }: AlbumProps) => (
         <AlbumArt src={album.albumArt} />
         <AlbumTitle>{album.title}</AlbumTitle>
         <AlbumArtist>{album.artist}</AlbumArtist>
-        <AlbumButton disabled={album.soldOut} onClick={() => console.log('album clicked')}>
+        <AlbumButton soldOut={album.soldOut} disabled={album.soldOut} onClick={() => console.log('album clicked')}>
             {album.soldOut ? 'Sold Out' : 'Buy Album' }
         </AlbumButton>
     </AlbumContainer>
